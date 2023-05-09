@@ -7,7 +7,7 @@
 
 ## Running the tests
 - Open the application in VS code and navigate to the */practice* folder, this is where you will complete the practice questions
-- To run the tests, make sure you're in the *Javascript_Practice* folder in your terminal and type *npm test*
+- To run the tests, make sure you're in the *Javascript_Practice* directory in your terminal and type *npm test*
 - Note you should see all tests being skipped, navigate to the *test* folder and open the *01_strings.test.js* file
 - remove the *x* in front of the word describe (line 5) in order to make the first test run
 - repeat this process for each test
