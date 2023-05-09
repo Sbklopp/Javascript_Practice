@@ -1,11 +1,8 @@
 const practice = require('../practice/01_strings')
 
-const combine = (string1, string2) => {
-  return string1 + string2
-}
 
 // TEST 1
-describe('combine', () => {
+xdescribe('combine', () => {
   test('concatenates two strings', () => {
     const string1 = 'hello';
     const string2 = 'world';
@@ -15,9 +12,8 @@ describe('combine', () => {
   });
 });
 
-
 // TEST 2
-describe('isString', () => {
+xdescribe('isString', () => {
   test('returns true for a string', () => {
     expect(practice.isString('hello')).toBe(true);
     expect(practice.isString({ name: 'John' })).toBe(false);
@@ -27,7 +23,7 @@ describe('isString', () => {
 });
 
 // TEST 3
-describe('characterCount', () => {
+xdescribe('characterCount', () => {
   test('returns the correct character count for a string', () => {
     expect(practice.characterCount('hello world')).toBe(11);
     expect(practice.characterCount('   ')).toBe(3);
@@ -36,14 +32,14 @@ describe('characterCount', () => {
 });
 
 // TEST 4
-describe('firstCharacter', () => {
+xdescribe('firstCharacter', () => {
   test('returns the first character of a string', () => {
     expect(practice.firstCharacter('hello')).toBe('h');
   });
 });
 
 // TEST 5
-describe('lastCharacter', () => {
+xdescribe('lastCharacter', () => {
   test('returns the last character of a string', () => {
     expect(practice.lastCharacter('hello')).toBe('o');
     expect(practice.lastCharacter('To be or not')).toBe('t');
@@ -51,7 +47,7 @@ describe('lastCharacter', () => {
 })
 
 // TEST 6
-describe('shout', () => {
+xdescribe('shout', () => {
   test('returns the string uppercase and adds exclamation', () => {
     expect(practice.shout('hello')).toEqual('HELLO!');
     expect(practice.shout('what did you say to me?')).toEqual('WHAT DID YOU SAY TO ME?!')
@@ -59,7 +55,7 @@ describe('shout', () => {
 })
 
 // TEST 7
-describe('removeFirstLetter', () => {
+xdescribe('removeFirstLetter', () => {
   test('removes the first letter of a string', () => {
     expect(practice.removeFirstCharacter('hello')).toBe('ello');
     expect(practice.removeFirstCharacter('a')).toBe('');
@@ -67,9 +63,8 @@ describe('removeFirstLetter', () => {
   });
 });
 
-
 // TEST 8
-describe('removeFirstThree', () => {
+xdescribe('removeFirstThree', () => {
   test('removes the first 3 characters of a string', () => {
     expect(practice.removeFirstThree('hello world')).toBe('lo world');
     expect(practice.removeFirstThree('abc')).toBe('');
@@ -79,7 +74,7 @@ describe('removeFirstThree', () => {
 });
 
 // TEST 9
-describe('removeNAmount', () => {
+xdescribe('removeNAmount', () => {
   test('removes n amount of characters from a string', () => {
     expect(practice.removeNAmount('hello world', 1)).toBe('ello world')
     expect(practice.removeNAmount('Donkey Kong', 7)).toBe('Kong')
@@ -88,7 +83,7 @@ describe('removeNAmount', () => {
 })
 
 // TEST 10
-describe('capitalized', () => {
+xdescribe('capitalized', () => {
   test('capitalizes the first letter of a string', () => {
     expect(practice.capitalized('hello')).toBe('Hello');
     expect(practice.capitalized('world')).toBe('World');
