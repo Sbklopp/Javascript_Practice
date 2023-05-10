@@ -11,6 +11,7 @@ const combine = (word1, word2) => {
 // Ex: isString("hello") should return true,
 //     isString(4) should return false
 const isString = (input) => {
+
 };
 
 // TEST 3
