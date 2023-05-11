@@ -4,7 +4,7 @@ const practice = require('../practice/01_strings')
 // TEST 1
 
 // REMOVE X FROM DESCRIBE TO RUN TEST //
-describe('combine', () => {
+xdescribe('combine', () => {
   test('concatenates two strings', () => {
     const string1 = 'hello';
     const string2 = 'world';
