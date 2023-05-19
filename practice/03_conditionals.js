@@ -28,11 +28,35 @@ const doubleDigits = () => {
 
 }
 
+// Write a function that takes a number as an arguement and
+// returns true if a number is both even (divisible by 2)
+// and is greater than 10
+// Ex: evenAndGreaterThanTen(16) returns true
+//     evenAndGreaterThanTen(15) returns false
+//     evenAndGreaterThanTen(8)  returns false
+const evenAndGreaterThanTen = () => {
 
+}
+
+// Write a function that takes a number as an argument
+// return the string "Yes" if the number is: greater than 5 but less than 10
+// OR if the number less than 0,
+// OR if the number is greater than 100
+// Otherwise return the string 'No'
+// Ex: orPractice(2) returns 'No
+//     orPractice(6) returns 'Yes'
+//     orPractice(-5) returns 'Yes'
+//     orPractice(200) returns 'Yes'
+// HINT look in the "OR operator"
+const orPractice = () => {
+ 
+}
 
 module.exports = {
     isAdult,
     canDrive,
     doubleDigits,
+    evenAndGreaterThanTen,
+    orPractice,
     
 }

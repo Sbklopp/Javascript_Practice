@@ -23,7 +23,6 @@ xdescribe('canDrive', () => {
     });
 });
 
-
 // TEST 3
 xdescribe('doubleDigits', () => {
     test('it returns true if number is double digit', () => {
@@ -33,3 +32,31 @@ xdescribe('doubleDigits', () => {
         expect(cons.doubleDigits(100)).toBe(false);
     });
 });
+
+// TEST 4
+xdescribe('evenAndGreaterThan10', () => {
+    test('returns true is number is even and greater than 10', () => {
+        expect(cons.evenAndGreaterThanTen(10)).toBe(false);
+        expect(cons.evenAndGreaterThanTen(12)).toBe(true);
+        expect(cons.evenAndGreaterThanTen(15)).toBe(false);
+        expect(cons.evenAndGreaterThanTen(8)).toBe(false);
+
+    });
+});
+
+// TEST 5
+xdescribe('orPractice', () => {
+    test('returns Yes if between 5-10, negative or over 100; otherwise, No', () => {
+        expect(cons.orPractice(10)).toBe('No');
+        expect(cons.orPractice(9)).toBe('Yes');
+        expect(cons.orPractice(5)).toBe('No');
+        expect(cons.orPractice(6)).toBe('Yes');
+        expect(cons.orPractice(0)).toBe('No');
+        expect(cons.orPractice(-1)).toBe('Yes');
+        expect(cons.orPractice(100)).toBe('No');
+        expect(cons.orPractice(101)).toBe('Yes');
+    });
+});
+
+
+
